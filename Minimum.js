@@ -31,6 +31,22 @@ function readLine() {
 
 function minimumDistances(a) {
     // Write your code here
+    let last, lastIndex;
+    let ar = [];
+    while(a.length !== 0){
+        last = a.pop();
+        lastIndex = a.length - 1;
+        if(a.includes(last)){
+            let dist = Math.abs(a.indexOf(last)-(lastIndex+1));
+            ar.push(dist);
+        }
+    }
+    if(ar.length === 0){
+        return -1;
+
+    }else{
+        return Math.min(...ar);
+    }
 
 }
 
