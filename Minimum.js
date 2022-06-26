@@ -31,7 +31,7 @@ function readLine() {
 
 function minimumDistances(a) {
     // Write your code here
-    let last, lastIndex;
+    let last, lastIndex; 
     let ar = [];
     while(a.length !== 0){
         last = a.pop();
